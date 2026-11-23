@@ -1,0 +1,62 @@
+
+.create-page {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px 20px;
+  background-color: #0d1117;
+  box-sizing: border-box;
+}
+
+.create-page .create-repo-form {
+  width: 100%;
+  max-width: 550px;
+  padding: 30px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: white;
+}
+
+.create-page .create-repo-form h2 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.create-page .create-repo-form p {
+  color: #8b949e;
+  margin-bottom: 20px;
+}
+
+.create-page .create-repo-form label {
+  color: white;
+  font-weight: 600;
+}
+
+.create-page .create-repo-form input,
+.create-page .create-repo-form textarea,
+.create-page .create-repo-form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 18px;
+  background-color: #0d1117;
+  color: white;
+  border: 1px solid #484f58;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.create-page .submit-repo-btn {
+  width: 100%;
+  background-color: #238636;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.create-page .submit-repo-btn:hover {
+  background-color: #2ea043;
+}

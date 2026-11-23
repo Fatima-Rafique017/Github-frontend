@@ -1,0 +1,519 @@
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #0d1117;
+}
+
+/* =========================
+   Profile Navigation
+========================= */
+
+.profile-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  padding: 12px 0;
+  background: transparent;
+  border-top: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+}
+
+.profile-nav-content {
+  width: 460px;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 55px;
+}
+
+.profile-nav-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 10px 0;
+  white-space: nowrap;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  transition: color 0.2s ease;
+}
+
+.profile-nav-item svg {
+  width: 20px;
+  height: 20px;
+  color: #ffffff;
+  fill: currentColor;
+  flex-shrink: 0;
+}
+
+.profile-nav-item:hover {
+  color: #ffffff;
+}
+
+.profile-nav-item:hover svg {
+  color: #ffffff;
+}
+
+.profile-nav-item.active {
+  color: #ffffff;
+  border: none;
+  text-decoration: none;
+}
+
+/* =========================
+   Pink Line Under Overview
+========================= */
+
+.profile-nav-item.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7px;
+  height: 3px;
+  background-color: #f778ba;
+  border-radius: 2px;
+}
+
+/* =========================
+   Profile Page
+========================= */
+
+.profile-page-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.user-profile-section {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 45px;
+}
+
+/* =========================
+   Profile Image
+========================= */
+
+.profile-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #8b949e;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   Username
+========================= */
+
+.name h3 {
+  color: #ffffff;
+  margin: 10px 0 20px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* =========================
+   Follow Button
+========================= */
+
+.follow-btn {
+  width: 250px;
+  padding: 10px;
+  background-color: #30363d;
+  color: #ffffff;
+  border: 1px solid #484f58;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.follow-btn:hover {
+  background-color: #484f58;
+}
+
+/* =========================
+   Followers
+========================= */
+
+.follower {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  color: #ffffff;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.follower p {
+  margin: 0;
+}
+
+/* =========================
+   Recent Contributions Heatmap
+========================= */
+
+.heat-map-section {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.heatmap-container {
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.heatmap-container h4 {
+  color: #ffffff !important;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.HeatMapProfile {
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  box-sizing: border-box;
+}
+
+/* Heatmap text */
+
+.HeatMapProfile text {
+  fill: #ffffff;
+}
+
+/* =========================
+   Logout Button
+========================= */
+
+#logout {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  padding: 6px 12px;
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #484f58;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#logout:hover {
+  background-color: #30363d;
+  color: #ffffff;
+}
+
+/* =========================
+   Repository Section
+========================= */
+
+.repository-section {
+  width: 100%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+.repository-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.repository-heading h2 {
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Create Repository Button */
+
+.create-repo-btn {
+  background-color: #238636;
+  color: white;
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.create-repo-btn:hover {
+  background-color: #2ea043;
+}
+
+/* Repository Form */
+
+.create-repo-form {
+  width: 100%;
+  max-width: 550px;
+  padding: 25px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.create-repo-form h3 {
+  color: #ffffff;
+  margin: 0 0 10px;
+}
+
+.create-repo-form input,
+.create-repo-form textarea,
+.create-repo-form select {
+  width: 100%;
+  padding: 10px;
+  background-color: #0d1117;
+  color: #ffffff;
+  border: 1px solid #484f58;
+  border-radius: 6px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.create-repo-form textarea {
+  min-height: 90px;
+  resize: vertical;
+}
+
+.create-repo-form input:focus,
+.create-repo-form textarea:focus,
+.create-repo-form select:focus {
+  outline: 1px solid #2f81f7;
+  border-color: #2f81f7;
+}
+
+/* Submit Button */
+
+.submit-repo-btn {
+  background-color: #238636;
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.submit-repo-btn:hover {
+  background-color: #2ea043;
+}
+
+/* Cancel Button */
+
+.cancel-repo-btn {
+  background-color: #30363d;
+  color: #ffffff;
+  border: 1px solid #484f58;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-repo-btn:hover {
+  background-color: #484f58;
+}
+
+/* Repository List */
+
+.repository-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Repository Card */
+
+.repository-card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 18px;
+  transition: border-color 0.2s ease;
+}
+
+.repository-card:hover {
+  border-color: #8b949e;
+}
+
+.repository-card h3 {
+  color: #58a6ff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 0 10px;
+  font-size: 19px;
+}
+
+.repository-card p {
+  margin: 10px 0;
+  color: #8b949e;
+}
+
+.repository-card span {
+  display: inline-block;
+  color: #8b949e;
+  border: 1px solid #484f58;
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 12px;
+}
+
+/* No Repository Message */
+
+.no-repo {
+  color: #8b949e;
+  padding: 20px 0;
+}
+
+/* =========================
+   Responsive Design
+========================= */
+
+@media (max-width: 600px) {
+
+  .profile-nav-content {
+    width: 100%;
+    justify-content: center;
+    gap: 25px;
+    padding: 0 10px;
+  }
+
+  .profile-nav-item {
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .profile-nav-item svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .user-profile-section {
+    width: 100%;
+  }
+
+  .heat-map-section {
+    width: 100%;
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .heatmap-container {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .HeatMapProfile {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .repository-section {
+    padding: 15px;
+    margin: 25px auto;
+  }
+
+  .repository-heading {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .repository-heading h2 {
+    font-size: 20px;
+  }
+
+  .create-repo-btn {
+    padding: 9px 12px;
+  }
+
+  .create-repo-form {
+    padding: 15px;
+  }
+
+  #logout {
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+
+/* =========================
+   Repository Actions
+========================= */
+
+.repo-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+/* Edit Button */
+
+.edit-repo-btn {
+  padding: 7px 16px;
+  background-color: #21262d;
+  color: #ffffff;
+  border: 1px solid #484f58;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.edit-repo-btn:hover {
+  background-color: #30363d;
+}
+
+/* Delete Button */
+
+.delete-repo-btn {
+  padding: 7px 16px;
+  background-color: transparent;
+  color: #f85149;
+  border: 1px solid #f85149;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-repo-btn:hover {
+  background-color: #da3633;
+  color: #ffffff;
+}
+

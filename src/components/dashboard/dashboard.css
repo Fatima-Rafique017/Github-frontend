@@ -1,0 +1,210 @@
+
+#dashboard {
+  width: 100%;
+  min-height: 100vh;
+  background: #0d0d0d;
+  color: white;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  padding: 170px 12% 50px;
+  gap: 40px;
+
+  border: none !important;
+}
+
+#dashboard aside,
+#dashboard main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Search Bar */
+#search {
+  width: 100%;
+  margin: 20px 0;
+}
+
+#search input {
+  width: 100%;
+  padding: 14px 18px;
+
+  background: #161b22;
+  color: white;
+
+  border: 1px solid #30363d;
+  border-radius: 8px;
+
+  font-size: 15px;
+  outline: none;
+
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+#search input::placeholder {
+  color: #8b949e;
+  font-size: 14px;
+}
+
+#search input:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 6px rgba(88, 166, 255, 0.25);
+}
+
+/* Repository Cards */
+.repo-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+
+  transition: all 0.3s ease;
+}
+
+.repo-card h4 {
+  color: #f0f6fc;
+  margin-bottom: 8px;
+}
+
+.repo-card p {
+  color: #8b949e;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Suggested Repositories */
+.suggested-container {
+  background: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 22px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.suggested-container h3 {
+  font-size: 19px;
+  color: #f0f6fc;
+  margin-bottom: 22px;
+  padding-bottom: 14px;
+
+  border-bottom: 1px solid #30363d;
+}
+
+.suggested-container .repo-card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+
+  padding: 18px;
+  margin-bottom: 16px;
+
+  transition: all 0.3s ease;
+}
+
+.suggested-container .repo-card:hover {
+  border-color: #58a6ff;
+  transform: translateY(-4px);
+
+  box-shadow: 0 5px 15px rgba(88, 166, 255, 0.12);
+}
+
+.suggested-container .repo-card h4 {
+  color: #58a6ff;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.suggested-container .repo-card p {
+  color: #8b949e;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Star and Unstar Button */
+.repo-card button {
+  margin-top: 10px;
+  padding: 8px 17px;
+
+  background-color: #238636;
+  color: white;
+
+  border: 1px solid rgba(240, 246, 252, 0.1);
+  border-radius: 7px;
+
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.repo-card button:hover {
+  background-color: #2ea043;
+  transform: scale(1.04);
+}
+
+/* Suggested Star Button */
+.suggested-container .repo-card button {
+  background: #238636;
+}
+
+.suggested-container .repo-card button:hover {
+  background: #2ea043;
+}
+
+/* Your Repositories */
+.main-container h2 {
+  color: #f0f6fc;
+  margin-bottom: 15px;
+}
+
+.main-container .repo-card:hover {
+  border-color: #58a6ff;
+}
+
+/* Starred Repositories */
+.starred-container {
+  margin-top: 25px;
+}
+
+.starred-container h3 {
+  color: #f0f6fc;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #30363d;
+}
+
+.starred-container .repo-card:hover {
+  border-color: #58a6ff;
+}
+
+.starred-container p {
+  color: #8b949e;
+}
+
+/* Upcoming Events */
+.events-container h3 {
+  color: #f0f6fc;
+  margin-bottom: 15px;
+}
+
+.events-container ul {
+  padding-left: 20px;
+}
+
+.events-container li {
+  margin-bottom: 12px;
+  color: #c9d1d9;
+  line-height: 1.5;
+}
+
+/* Empty Message */
+.empty-message {
+  color: #8b949e;
+}
+
