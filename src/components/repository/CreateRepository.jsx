@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import Navbar from "../Navbar";
-import "./createRepository.css";
+import "./createrepository.css";
 
 const CreateRepository = () => {
   const navigate = useNavigate();
